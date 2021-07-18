@@ -23,26 +23,39 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNx-eF-MXh">
-                                            <rect key="frame" x="20" y="27.5" width="44" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNx-eF-MXh">
+                                            <rect key="frame" x="20" y="28" width="44" height="43"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="xNx-eF-MXh" secondAttribute="height" multiplier="1:1" id="I8q-ma-HB6"/>
+                                                <constraint firstAttribute="width" constant="44" id="WoJ-Gn-K3x"/>
+                                            </constraints>
                                             <state key="normal" backgroundImage="circle" catalog="system"/>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U85-2g-1Lk">
-                                            <rect key="frame" x="72" y="27" width="33" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U85-2g-1Lk">
+                                            <rect key="frame" x="72" y="20" width="322" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXY-A0-Qsa">
-                                            <rect key="frame" x="72" y="51" width="36" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXY-A0-Qsa">
+                                            <rect key="frame" x="72" y="49" width="36" height="23"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xXY-A0-Qsa" firstAttribute="top" secondItem="U85-2g-1Lk" secondAttribute="bottom" constant="8" symbolic="YES" id="47m-Ob-MbY"/>
+                                        <constraint firstItem="xNx-eF-MXh" firstAttribute="leading" secondItem="Nhn-wo-z1u" secondAttribute="leading" id="5AK-lt-Gum"/>
+                                        <constraint firstItem="xNx-eF-MXh" firstAttribute="centerY" secondItem="Nhn-wo-z1u" secondAttribute="centerY" id="HnE-Yo-ssd"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xXY-A0-Qsa" secondAttribute="bottom" constant="20" symbolic="YES" id="OND-P9-Bhb"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xXY-A0-Qsa" secondAttribute="trailing" constant="20" symbolic="YES" id="bYf-qv-ryW"/>
+                                        <constraint firstAttribute="trailing" secondItem="U85-2g-1Lk" secondAttribute="trailing" constant="20" symbolic="YES" id="iCP-Ui-wac"/>
+                                        <constraint firstItem="U85-2g-1Lk" firstAttribute="leading" secondItem="xNx-eF-MXh" secondAttribute="trailing" constant="8" symbolic="YES" id="nWv-CN-XaN"/>
+                                        <constraint firstItem="U85-2g-1Lk" firstAttribute="top" secondItem="Nhn-wo-z1u" secondAttribute="top" constant="20" symbolic="YES" id="nfX-fQ-YUW"/>
+                                        <constraint firstItem="xXY-A0-Qsa" firstAttribute="leading" secondItem="U85-2g-1Lk" secondAttribute="leading" id="rUd-rk-SQX"/>
+                                        <constraint firstItem="xNx-eF-MXh" firstAttribute="leading" secondItem="Nhn-wo-z1u" secondAttribute="leading" constant="20" symbolic="YES" id="ueA-wr-E0i"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
