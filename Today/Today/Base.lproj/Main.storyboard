@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="0hi-Vh-Z0L">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReminderListCell" rowHeight="99" id="0hi-Vh-Z0L" customClass="ReminderListCell" customModule="Today" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="99"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0hi-Vh-Z0L" id="Nhn-wo-z1u">
@@ -30,6 +30,9 @@
                                                 <constraint firstAttribute="width" constant="44" id="WoJ-Gn-K3x"/>
                                             </constraints>
                                             <state key="normal" backgroundImage="circle" catalog="system"/>
+                                            <connections>
+                                                <action selector="doneButtonTriggeredWithSender:" destination="0hi-Vh-Z0L" eventType="touchUpInside" id="r5V-qg-Ofn"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U85-2g-1Lk">
                                             <rect key="frame" x="72" y="20" width="322" height="21"/>
@@ -57,6 +60,11 @@
                                         <constraint firstItem="xNx-eF-MXh" firstAttribute="leading" secondItem="Nhn-wo-z1u" secondAttribute="leading" constant="20" symbolic="YES" id="ueA-wr-E0i"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="xXY-A0-Qsa" id="wXc-Dv-rxP"/>
+                                    <outlet property="doneButton" destination="xNx-eF-MXh" id="Mvk-i2-uPn"/>
+                                    <outlet property="titleLabel" destination="U85-2g-1Lk" id="Th1-BK-UF4"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
