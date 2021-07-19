@@ -17,6 +17,7 @@
 		0282098426A3360700206A2B /* TodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282098326A3360700206A2B /* TodayUITests.swift */; };
 		0282099226A33DBA00206A2B /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282099126A33DB900206A2B /* Reminder.swift */; };
 		0282099426A4656B00206A2B /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282099326A4656B00206A2B /* ReminderListCell.swift */; };
+		0282099626A5C35700206A2B /* ReminderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282099526A5C35700206A2B /* ReminderDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0282098526A3360700206A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0282099126A33DB900206A2B /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		0282099326A4656B00206A2B /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
+		0282099526A5C35700206A2B /* ReminderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				0282096F26A3360700206A2B /* Info.plist */,
 				0282099126A33DB900206A2B /* Reminder.swift */,
 				0282099326A4656B00206A2B /* ReminderListCell.swift */,
+				0282099526A5C35700206A2B /* ReminderDetailViewController.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				0282096626A335DC00206A2B /* ReminderListViewController.swift in Sources */,
 				0282099426A4656B00206A2B /* ReminderListCell.swift in Sources */,
 				0282096226A335DC00206A2B /* AppDelegate.swift in Sources */,
+				0282099626A5C35700206A2B /* ReminderDetailViewController.swift in Sources */,
 				0282096426A335DC00206A2B /* SceneDelegate.swift in Sources */,
 				0282099226A33DBA00206A2B /* Reminder.swift in Sources */,
 			);
